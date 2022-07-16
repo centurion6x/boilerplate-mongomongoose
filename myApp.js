@@ -2,7 +2,7 @@ require('dotenv').config({path: __dirname + "/.env"});
 //console.log(process.env.MONGO_URI);
 const mongoose = require('mongoose') ;
 //database connector
-mongoose.createConnection(process.env.MONGO_URI, {useNewUrlParser : true, useUnifiedTopology: true}) ;
+mongoose.createConnection(process.env.MONGO_URI, {useNewUrlParser : true}) ;
 
 let Person;
 
